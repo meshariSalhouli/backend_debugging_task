@@ -1,6 +1,6 @@
 # Debugging Challenge
 
-### Before you start, Create a .env file and add the following to it:
+### Before you start, Create a .env file and add copy the following code and paste into it:
 
 ```
 PORT=8000;
