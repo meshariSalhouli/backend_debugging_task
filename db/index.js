@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
+// const dotenv = require("dotenv");
 
-const options = {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-};
+console.log(process.env.DB_URL);
+
+// dotenv.config();
 
 mongoose
-  .connect(process.env.DB_URI, options)
+  .connect(process.env.DB_URL)
   .then(() => {
     console.log("DB connected");
   })
   .catch((err) => {
-    console.log("DB connected");
+    console.log(err);
   });
